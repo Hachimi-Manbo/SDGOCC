@@ -181,84 +181,11 @@ class BEVDetOCC(BEVDet):
         # plt.figure()
         # plt.imshow(bev_norm_log1[0])
         # plt.show()
-        # if self.with_pts_backbone and self.with_img_backbone:
-        #     mask = img_feats != 0
-        #     # Apply mask to both predicted and target features
-        #     pred_masked = img_feats[mask]
-        #     target_masked = fuse_features[mask]
-        #
-        #     # pred_masked = img_feats
-        #     # target_masked = fuse_features
-        #
-        #     # Compute the MSE loss only on the masked elements
-        #     losses['loss_kl'] = 100.0*F.mse_loss(pred_masked, target_masked)
-        # if self.with_pts_backbone and self.with_img_backbone:
-        #     # common_mask = (img_feats != 0) & (fuse_features != 0)
-        #     #
-        #     # # 2. 雷达非0图像为0的区域掩码
-        #     # lidar_only_mask = (img_feats == 0) & (fuse_features != 0)
-        #     #
-        #     # # lidar_exclusive_mask = (pts_bev_feat != 0) & (~common_mask)
-        #     #
-        #     # # 3. 共同非0区域的MSE损失
-        #     # losses['mse_los'] = F.mse_loss(img_feats * common_mask, fuse_features * common_mask)
-        #     #
-        #     # # 4. 雷达非0图像为0区域的Smooth L1损失
-        #     # if lidar_only_mask.sum() > 0:  # 确保有非零元素
-        #     #     smooth_l1_loss = F.smooth_l1_loss(img_feats * lidar_only_mask, fuse_features * lidar_only_mask)
-        #     # else:
-        #     #     smooth_l1_loss = torch.tensor(0.0)
-        #     # losses[" smooth_l1_loss"] = smooth_l1_loss
-        #     common_mask = (img_feats != 0) & (fuse_features != 0)
-        #
-        #     # 雷达非0图像为0的区域掩码
-        #     lidar_only_mask = (img_feats == 0) & (fuse_features != 0)
-        #
-        #     # 计算 common_mask 和 lidar_only_mask 的总和
-        #     common_mask_sum = common_mask.sum().float()  # 将sum转换为float以避免整数除法
-        #     lidar_only_mask_sum = lidar_only_mask.sum().float()
-        #
-        #     # 计算比值
-        #     if lidar_only_mask_sum > 0:  # 确保 lidar_only_mask 有非零元素
-        #         mask_ratio = common_mask_sum / lidar_only_mask_sum
-        #     else:
-        #         mask_ratio = torch.tensor(1.0)  # 如果没有非零元素，默认比值为1.0
-        #
-        #     # 共同非0区域的MSE损失
-        #     losses['mse_loss'] = F.mse_loss(img_feats * common_mask, fuse_features * common_mask)
-        #
-        #     # 雷达非0图像为0区域的Smooth L1损失
-        #     if lidar_only_mask.sum() > 0:  # 确保有非零元素
-        #         smooth_l1_loss = F.smooth_l1_loss(img_feats * lidar_only_mask, fuse_features * lidar_only_mask)
-        #     else:
-        #         smooth_l1_loss = torch.tensor(0.0)
-        #
-        #     # 使用两者的比值来调整 smooth_l1_loss 的权重
-        #     if mask_ratio>1:
-        #         smooth_l1_loss = smooth_l1_loss * mask_ratio
-        #     else:
-        #         smooth_l1_loss=smooth_l1_loss* (1/mask_ratio)
-        #
-        #     # 添加调整后的 smooth_l1_loss
-        #     losses['smooth_l1_loss'] = smooth_l1_loss
 
         img_feats = self.bev_encoder(fuse_features)
 
         voxel_semantics = kwargs['voxel_semantics']  # (B, Dx, Dy, Dz)
         mask_camera = kwargs['mask_camera']  # (B, Dx, Dy, Dz)
-        # if self.with_pts_backbone and self.with_img_backbone:
-        #     occ_bev_feature = fuse_features
-        # else:
-        #     occ_bev_feature = img_feats[0]
-        # if self.is_centercrop == True:  # True
-        #     _, _, w, h = occ_bev_feature.shape
-        #     if w == 256:
-        #         occ_bev_feature = occ_bev_feature[..., 28:228, 28:228].clone()
-        #     elif w == 128:
-        #         occ_bev_feature = occ_bev_feature[..., 14:114, 14:114].clone()
-        # if self.upsample:  # flase
-        #     occ_bev_feature = F.interpolate(occ_bev_feature, scale_factor=2,
-        #                                     mode='bilinear', align_corners=True)
 
         loss_occ = self.forward_occ_train(img_feats, voxel_semantics, mask_camera)
         losses.update(loss_occ)
