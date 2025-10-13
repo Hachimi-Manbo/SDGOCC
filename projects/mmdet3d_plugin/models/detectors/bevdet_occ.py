@@ -444,35 +444,11 @@ class BEVStereo4DOCC(BEVStereo4D):
             losses['loss_sem'] = loss_sem
         losses['pts_loss'] = data_dict['loss']
 
-        # if self.with_pts_backbone and self.with_img_backbone:
-        #     mask = img_feats != 0
-        #     # Apply mask to both predicted and target features
-        #     pred_masked = img_feats[mask]
-        #     target_masked = fuse_features[mask]
-        #
-        #     # pred_masked = img_feats
-        #     # target_masked = fuse_features
-        #
-        #     # Compute the MSE loss only on the masked elements
-        #     losses['loss_kl'] = 100.0*F.mse_loss(pred_masked, target_masked)
-
         img_feats = self.bev_encoder(fuse_features)
 
         voxel_semantics = kwargs['voxel_semantics']  # (B, Dx, Dy, Dz)
         mask_camera = kwargs['mask_camera']  # (B, Dx, Dy, Dz)
-        # if self.with_pts_backbone and self.with_img_backbone:
-        #     occ_bev_feature = fuse_features
-        # else:
-        #     occ_bev_feature = img_feats[0]
-        # if self.is_centercrop == True:  # True
-        #     _, _, w, h = occ_bev_feature.shape
-        #     if w == 256:
-        #         occ_bev_feature = occ_bev_feature[..., 28:228, 28:228].clone()
-        #     elif w == 128:
-        #         occ_bev_feature = occ_bev_feature[..., 14:114, 14:114].clone()
-        # if self.upsample:  # flase
-        #     occ_bev_feature = F.interpolate(occ_bev_feature, scale_factor=2,
-        #                                     mode='bilinear', align_corners=True)
+
 
         loss_occ = self.forward_occ_train(img_feats, voxel_semantics, mask_camera)
         losses.update(loss_occ)
