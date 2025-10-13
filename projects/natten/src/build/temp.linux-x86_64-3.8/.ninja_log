@@ -1,0 +1,25 @@
+# ninja log v5
+0	9263	1726740109271184300	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda.o	cd5a1e386fe2c4c3
+0	16195	1726740116205290600	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda_kernel.o	59489757edfb4677
+0	9040	1726740125749510900	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda.o	181dc34bac3b3dd7
+0	16537	1726740133247872000	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda_kernel.o	40818b160cfd71de
+0	9177	1726740142915212400	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda.o	6870ed6ef1384ae9
+1	15668	1726740149405933600	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda_kernel.o	efd4eb400a792ff5
+1	9272	1726740159186172700	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda.o	983a77633ec6f40b
+1	15611	1726740165533667100	/dzp/SADA_OCC2/projects/mmdet3d_plugin/models/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda_kernel.o	2c591130f6f8a57d
+0	8567	1727150388562066500	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda.o	2f24a84166e61ad6
+0	19565	1727150399556725700	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda_kernel.o	39edca8d7937e9b3
+1	8432	1727150408346220400	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda.o	801b06fb089ddcc2
+1	19729	1727150419639648100	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda_kernel.o	20197e15cd2eb071
+1	8563	1727150428590168400	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda.o	c4eacc7e1c4a428b
+1	19117	1727150439139460600	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda_kernel.o	eac099746eaf18cb
+1	8718	1727150448266838200	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda.o	5415f55833deb795
+1	19136	1727150458682253000	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda_kernel.o	2d38976700884bc8
+1	9024	1727845197652371600	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda.o	9efb34cc9f623686
+1	20067	1727845208691783400	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/nattenav_cuda_kernel.o	dc4d9a7ed74767a5
+0	8653	1727845217741778600	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda.o	74f54d0c66fa9edf
+1	20446	1727845229526563000	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/nattenqkrpb_cuda_kernel.o	74b1574fe6f4b8bc
+1	8622	1727845238611352000	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda.o	a60c04595525f6a8
+1	19140	1727845249125319800	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dav_cuda_kernel.o	893cda2c6dc78587
+1	8525	1727845258039640400	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda.o	1e01aee30880776c
+1	19342	1727845268853237700	/media/wj-hust/deeplearning/dzp/SADA_OCC_ALIGN2/projects/natten/src/build/temp.linux-x86_64-3.8/natten1dqkrpb_cuda_kernel.o	b51f39cbf710c927
