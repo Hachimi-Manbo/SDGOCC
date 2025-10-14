@@ -7,7 +7,7 @@
 
 
 ## Model weights (Baidu Netdisk)：  
-[点击跳转](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8)  提取码：`uky8`
+[Checkpoint](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8) 
 
 
 ## 🙏 Acknowledgement
