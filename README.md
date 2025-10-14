@@ -7,7 +7,7 @@
 
 
 ## Model weights (Baidu Netdisk)：  
-[Checkpoint](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8) 
+Code weights are here.[Checkpoint](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8) 
 
 
 ## 🙏 Acknowledgement
