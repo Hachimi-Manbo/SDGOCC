@@ -3,12 +3,23 @@
 <h2>SDGOCC: Semantic and Depth-Guided Bird's-Eye View Transformation for 3D Multimodal Occupancy Prediction</h2>
 
 **CVPR 2025**
-Model weights (Baidu Netdisk)：  
+
+
+## Model weights (Baidu Netdisk)：  
 [点击跳转](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8)  提取码：`uky8`
 
 
-## 📃 Bibtex
+## 🙏 Acknowledgement
 
+This project is not possible without multiple great open-sourced code bases. We list some notable examples below.
+
+- [open-mmlab](https://github.com/open-mmlab)
+- [Occ3D](https://github.com/Tsinghua-MARS-Lab/Occ3D)
+- [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
+- [FlashOCC](https://github.com/Yzichen/FlashOCC)
+- [FB-OCC](https://github.com/NVlabs/FB-BEV)
+
+## 📃 Bibtex
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
 ```
