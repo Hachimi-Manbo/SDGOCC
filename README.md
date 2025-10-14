@@ -6,7 +6,7 @@
 </div>
 
 
-## Model weights (Baidu Netdisk)：  
+## 🚀 Model weights (Baidu Netdisk)：  
 Code weights are here.[Checkpoint](https://pan.baidu.com/s/1OSoMYKUfrGTYrP2Ufm-q-Q?pwd=uky8) 
 
 
