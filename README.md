@@ -23,6 +23,40 @@ This repository is fork from  [SDGOCC: Semantic and Depth-Guided Bird's-Eye View
 
 3. I clone FlashOcc conda env to SDGOCC env, so I can't provide exact env config step.
 
+## 🛠️ Result
+
+mIoU is obviously lower than the original paper, which may be caused by the above issues. The result is as follows:
+```
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 6019/6019, 5.9 task/s, elapsed: 1016s, ETA:     0s
+Starting Evaluation...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6019/6019 [00:21<00:00, 283.13it/s]
+===> per class IoU of 6019 samples:
+===> others - IoU = 0.0
+===> barrier - IoU = 0.0
+===> bicycle - IoU = 0.03
+===> bus - IoU = 0.0
+===> car - IoU = 0.0
+===> construction_vehicle - IoU = 0.02
+===> motorcycle - IoU = 0.0
+===> pedestrian - IoU = 0.09
+===> traffic_cone - IoU = 0.01
+===> trailer - IoU = 0.0
+===> truck - IoU = 0.08
+===> driveable_surface - IoU = 3.59
+===> other_flat - IoU = 0.0
+===> sidewalk - IoU = 0.0
+===> terrain - IoU = 0.0
+===> manmade - IoU = 1.95
+===> vegetation - IoU = 0.0
+===> mIoU of 6019 samples: 0.34
+===>voxel_occ - IoU = 12.26
+{'mIoU': 0.34}
+```
+
+In next stage, I will discover how to generate correct `.npy` file and try to reproduce the result in the paper.
+
+If you have and idea about the usage of the `.npy` file, please contact me or submit a pr. Thanks a lot!
+
 ## 📃 Bibtex
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
