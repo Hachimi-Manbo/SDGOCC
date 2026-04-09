@@ -11,13 +11,17 @@
 
 ## 🙏 Acknowledgement
 
-This project is not possible without multiple great open-sourced code bases. We list some notable examples below.
+This repository is fork from  [SDGOCC: Semantic and Depth-Guided Bird's-Eye View Transformation for 3D Multimodal Occupancy Prediction (CVPR 2025)
+](https://github.com/DzpLab/SDGOCC)
 
-- [open-mmlab](https://github.com/open-mmlab)
-- [Occ3D](https://github.com/Tsinghua-MARS-Lab/Occ3D)
-- [BEVDet](https://github.com/HuangJunJie2017/BEVDet)
-- [FlashOCC](https://github.com/Yzichen/FlashOCC)
-- [FB-OCC](https://github.com/NVlabs/FB-BEV)
+
+## 📂 Known Issues
+
+1. `.npy` file process is not released by the author. I must conduct the process, which may cause errors. If you have idea about how to process the `.npy` file, please contact me or submit a pr. In this step, the error demonstrate like `FileNotFoundError: [Errno 2] No such file or directory: 'data/nuscenes/point_label/LIDAR_TOP/n015-2018-07-11-11-54-16+0800__LIDAR_TOP__1531281439800013.npy'`
+
+2. My env is different from FlashOcc and the author's. I use CUDA 11.7 and Ubuntu22.04.
+
+3. I clone FlashOcc conda env to SDGOCC env, so I can't provide exact env config step.
 
 ## 📃 Bibtex
 If this work is helpful for your research, please consider citing the following BibTeX entry.
